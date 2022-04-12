@@ -4,7 +4,7 @@ import { BotaoSubmit } from './style';
 const SubmitDoFormulario = ({ text }) => {
     return(
         <>
-            <BotaoSubmit>{text}</BotaoSubmit>
+            <BotaoSubmit type='submit'>{text}</BotaoSubmit>
         </>
     )
 };

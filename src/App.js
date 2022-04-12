@@ -8,6 +8,7 @@ import Empresa from './Componentes/Paginas/Empresa/Empresa';
 import NovoProjeto from './Componentes/Paginas/NovoProjeto/NovoProjeto';
 import Contato from './Componentes/Paginas/Contato/Contato';
 import Footer from './Componentes/Layout/Footer/Footer';
+import Projetos from './Componentes/Paginas/Projetos/Projetos';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
                 <Route exact path="/Empresa" element={<Empresa/>}></Route>
                 <Route exact path="/Novoprojeto" element={<NovoProjeto/>}></Route>
                 <Route exact path="/Contato" element={<Contato/>}></Route>
+                <Route exact path="/Projetos" element={<Projetos/>}></Route>
           </Routes>
         </Container>
         <Footer/>

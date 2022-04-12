@@ -3,15 +3,19 @@ import { ContainerInput, Label } from '../InputDoFormulario/style';
 import { Select, Option } from './style';
 
 
-const SelectDoFormulario = ({ text, name, options }) => {
+const SelectDoFormulario = ({ text, name, options, alterarCategoria, value, id }) => {
     return(
         <ContainerInput>
             <Label htmlFor={name}>{text}</Label>
-            <Select name={name} id={name}>
+            <Select
+            name={name}
+            id={id}
+            onChange={alterarCategoria}
+            value={value || ""}
+            >
                 <Option>Selecione uma Opção</Option>
-                {console.log(options)}
                 {options.map((opcao) => (
-                    <Option key={opcao.id}>{opcao.name}</Option>
+                    <Option value={opcao.id} key={opcao.id}>{opcao.name}</Option>
                 ))};
             </Select>
         </ContainerInput>
