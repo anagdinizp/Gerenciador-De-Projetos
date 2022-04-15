@@ -9,6 +9,7 @@ import NovoProjeto from './Componentes/Paginas/NovoProjeto/NovoProjeto';
 import Contato from './Componentes/Paginas/Contato/Contato';
 import Footer from './Componentes/Layout/Footer/Footer';
 import Projetos from './Componentes/Paginas/Projetos/Projetos';
+import { Mensagem } from './Mensagem/Mensagem';
 
 function App() {
   return (
@@ -18,13 +19,15 @@ function App() {
             <Navbar/>
         </>
         <Container>
-          <Routes>
+          <Mensagem>
+            <Routes>
                 <Route exact path="/" element={<Inicio/>}></Route>
                 <Route exact path="/Empresa" element={<Empresa/>}></Route>
                 <Route exact path="/Novoprojeto" element={<NovoProjeto/>}></Route>
                 <Route exact path="/Contato" element={<Contato/>}></Route>
                 <Route exact path="/Projetos" element={<Projetos/>}></Route>
-          </Routes>
+            </Routes> 
+          </Mensagem>
         </Container>
         <Footer/>
       </Router>
