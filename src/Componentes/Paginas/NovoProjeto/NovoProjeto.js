@@ -4,11 +4,11 @@ import { NewProject } from "./style";
 import { H1 } from '../../Paginas/Inicio/style';
 import {Paragrafo} from '../../Layout/Footer/style';
 import FormularioDoProjeto from "../../Projeto/FormularioDoProjeto/FormularioDoProjeto";
-import { usarMensagem } from '../../../Mensagem/Mensagem';
+import { useMensagem } from '../../../Mensagem/Mensagem';
 
 const NovoProjeto = () => {
     const navigate = useNavigate();
-    const { Mensagem } = usarMensagem();
+    const { mostrarMensagem } = useMensagem();
     const metodoPost = (projetos) => {
         
 
@@ -22,12 +22,12 @@ const NovoProjeto = () => {
             .then((dados) => {
                 console.log(dados.data)
                 navigate('/Projetos')
-                Mensagem('O Projeto foi criado com sucesso.')
+                mostrarMensagem('O Projeto foi criado com sucesso.')
                 
             })
             .catch((err) => {
                 console.error(err)
-                Mensagem('Houve um problema na criação do projeto.')
+                mostrarMensagem('Houve um problema na criação do projeto.')
             });
     };
 

@@ -1,33 +1,31 @@
-import React, { createContext, useEffect, useState, useContext } from "react";
+import React, { createContext, useState, useContext } from "react";
 import { Msg } from "./style";
 
 const MensagemContexto = createContext();
     
-const Mensagem = ({ mensagem }) => {
+const Mensagem = ({ children }) => {
     const [visivel, setVisivel] = useState(false);
-    useEffect(() => {
-        if(!mensagem){
-            setVisivel(false)
-            
-        } else{
-            setVisivel(true)
-        }
-    }, [mensagem])
+    const [mensagem, setMensagem] = useState("");
 
     const mostrarMensagem = (mensagem) => {
-        if (visivel){
-            return(mensagem);
-        };
+        setVisivel(true);
+        setMensagem(mensagem);
+        setTimeout(() => {
+            setVisivel(false);
+            setMensagem("");
+        }, 3000)
+        return mensagem;
     }
 
     return(
         <MensagemContexto.Provider value={{mostrarMensagem}}>
-            <Msg mostrarMensagem={mostrarMensagem}/>
+            <Msg visivel={visivel}>{mensagem}</Msg>
+            {children}
         </MensagemContexto.Provider>
     );
 };
 
-const usarMensagem = () => {
+const useMensagem = () => {
     const context = useContext(MensagemContexto);
     if(!context){
         throw new Error('Algo não está certo')
@@ -35,4 +33,4 @@ const usarMensagem = () => {
     return context;
 };
 
-export {Mensagem, usarMensagem};
+export {Mensagem, useMensagem};
