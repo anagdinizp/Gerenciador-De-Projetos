@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-export const Msg = styled.div`
-    ${({visivel}) => visivel ? `     
+export const Msg = styled.div`     
     width: 100%;
     padding: 1em;
     border: 1px solid lightgrey;
@@ -10,5 +9,4 @@ export const Msg = styled.div`
     margin-bottom: 2em;
     text-align: center;
     color: lightgrey;
-    ` : `display: none`}
 `;

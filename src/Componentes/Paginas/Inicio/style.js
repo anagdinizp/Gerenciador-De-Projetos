@@ -17,10 +17,14 @@ export const Link = styled.a`
     padding: 0.5em;
     :hover {
         cursor: pointer;
+        color: white;
     }
 `;
 
 export const H1 = styled.h1`
     font-size: 2.5em;
     margin-bottom:  0.5em;
+    text-align: center;
+    margin-right: 0.5em;
+    margin-top: 2em;
 `;

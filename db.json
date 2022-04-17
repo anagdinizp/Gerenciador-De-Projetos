@@ -1,17 +1,17 @@
 {
   "projetos": [
     {
-      "name": "yago",
-      "custos": "22",
+      "name": "Teste 1",
+      "custos": "469",
       "categorias": {
-        "id": "3",
-        "name": "Design"
+        "id": "1",
+        "name": "Infra"
       },
       "id": 1
     },
     {
-      "name": "projeto teste",
-      "custos": "5435453",
+      "name": "Teste 2",
+      "custos": "925",
       "categorias": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -19,112 +19,22 @@
       "id": 2
     },
     {
-      "name": "Python | HTML5 | CSS3 | JavaScript",
-      "custos": "5664",
+      "name": "Teste 3",
+      "custos": "387",
       "categorias": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
       "id": 3
     },
     {
-      "name": "teste",
-      "custos": "5464524",
+      "name": "Teste 4",
+      "custos": "825",
       "categorias": {
-        "id": "1",
-        "name": "Infra"
+        "id": "4",
+        "name": "Planejamento"
       },
       "id": 4
-    },
-    {
-      "name": "yago",
-      "custos": "3434",
-      "categorias": {
-        "id": "3",
-        "name": "Design"
-      },
-      "id": 5
-    },
-    {
-      "name": "projeto teste",
-      "custos": "35345",
-      "categorias": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "id": 6
-    },
-    {
-      "name": "Mãe",
-      "custos": "64565474",
-      "categorias": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "id": 7
-    },
-    {
-      "name": "mais um",
-      "custos": "435353",
-      "categorias": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "id": 8
-    },
-    {
-      "name": "fdgdfgd",
-      "custos": "234324",
-      "categorias": {
-        "id": "3",
-        "name": "Design"
-      },
-      "id": 9
-    },
-    {
-      "name": "Ana Gabriela Diniz Pimentel",
-      "custos": "3434",
-      "categorias": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "id": 10
-    },
-    {
-      "name": "Python | HTML5 | CSS3 | JavaScript",
-      "custos": "242",
-      "categorias": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "id": 11
-    },
-    {
-      "name": "projeto da sua mae",
-      "custos": "242342342",
-      "categorias": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "id": 12
-    },
-    {
-      "name": "Python | HTML5 | CSS3 | JavaScript",
-      "custos": "5454",
-      "categorias": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "id": 13
-    },
-    {
-      "name": "yago cheiroso",
-      "custos": "222222",
-      "categorias": {
-        "id": "3",
-        "name": "Design"
-      },
-      "id": 14
     }
   ],
   "categorias": [

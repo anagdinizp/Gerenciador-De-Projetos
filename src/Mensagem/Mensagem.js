@@ -19,7 +19,8 @@ const Mensagem = ({ children }) => {
 
     return(
         <MensagemContexto.Provider value={{mostrarMensagem}}>
-            <Msg visivel={visivel}>{mensagem}</Msg>
+            {visivel ? <Msg>{mensagem}</Msg> : <></>}
+            
             {children}
         </MensagemContexto.Provider>
     );
