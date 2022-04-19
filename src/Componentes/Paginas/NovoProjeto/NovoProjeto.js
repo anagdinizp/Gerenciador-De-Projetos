@@ -20,13 +20,11 @@ const NovoProjeto = () => {
         api
             .post("/projetos", body)
             .then((dados) => {
-                console.log(dados.data)
                 navigate('/Projetos')
                 mostrarMensagem('O Projeto foi criado com sucesso.')
                 
             })
             .catch((err) => {
-                console.error(err)
                 mostrarMensagem('Houve um problema na criação do projeto.')
             });
     };

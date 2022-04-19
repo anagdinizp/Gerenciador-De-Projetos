@@ -2,16 +2,16 @@
   "projetos": [
     {
       "name": "Teste 1",
-      "custos": "469",
+      "custos": "3523",
       "categorias": {
-        "id": "1",
-        "name": "Infra"
+        "id": "4",
+        "name": "Planejamento"
       },
       "id": 1
     },
     {
       "name": "Teste 2",
-      "custos": "925",
+      "custos": "6547",
       "categorias": {
         "id": "2",
         "name": "Desenvolvimento"
@@ -20,19 +20,19 @@
     },
     {
       "name": "Teste 3",
-      "custos": "387",
+      "custos": "5934",
       "categorias": {
-        "id": "3",
-        "name": "Design"
+        "id": "1",
+        "name": "Infra"
       },
       "id": 3
     },
     {
-      "name": "Teste 4",
-      "custos": "825",
+      "name": "yago",
+      "custos": "56",
       "categorias": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "3",
+        "name": "Design"
       },
       "id": 4
     }
