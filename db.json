@@ -26,15 +26,6 @@
         "name": "Infra"
       },
       "id": 3
-    },
-    {
-      "name": "yago",
-      "custos": "56",
-      "categorias": {
-        "id": "3",
-        "name": "Design"
-      },
-      "id": 4
     }
   ],
   "categorias": [

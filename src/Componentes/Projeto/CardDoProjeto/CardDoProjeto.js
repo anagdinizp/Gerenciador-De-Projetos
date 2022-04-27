@@ -1,7 +1,13 @@
 import {Card, H4, P, Funcionalidades, Span, Bolinha, Categorias, ALink, BotaoCard} from './style'
 import {BsPencil, BsFillTrashFill} from 'react-icons/bs';
 
-const CardDoProjeto = ({name, id, categorias, custos, removerProjeto}) => {
+const CardDoProjeto = ({name, id, categorias, custos, removerProjetos}) => {
+
+    const remover = (evento) => {
+        evento.preventDefault()
+        removerProjetos(id)
+    }
+
     return(
         <Card>
             <H4>{name}</H4>
@@ -15,13 +21,12 @@ const CardDoProjeto = ({name, id, categorias, custos, removerProjeto}) => {
                 <ALink href='/'>
                     <BsPencil/> Editar
                 </ALink>
-                <BotaoCard>
+                <BotaoCard onClick={remover}>
                     <BsFillTrashFill/> Remover
                 </BotaoCard>
             </Funcionalidades>
         </Card>
     );
-
 };
 
 export default CardDoProjeto;

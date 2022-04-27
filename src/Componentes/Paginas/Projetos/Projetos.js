@@ -3,13 +3,10 @@ import { useState, useEffect } from 'react';
 import { ContainerProjetos, Titulo, Caixa, Ahref} from './style';
 import { H1} from "../Inicio/style";
 import CardDoProjeto from '../../Projeto/CardDoProjeto/CardDoProjeto';
-import Loading from '../../Layout/Loader/Loading';
-import { P } from '../../Projeto/CardDoProjeto/style';
 import { useMensagem } from '../../../Mensagem/Mensagem';
 
 const Projetos = () => {
     const [projetos, setProjetos] = useState("");
-    const [removerLoading, setRemoverLoading] = useState(false);
     const { mostrarMensagem } = useMensagem();
 
     useEffect(() => {
@@ -18,7 +15,6 @@ const Projetos = () => {
                 .get("/projetos")
                 .then((dados) => {
                     setProjetos(dados.data);
-                    setRemoverLoading(true);
                 })
                 .catch((err) => {
                     console.error(err);
@@ -52,10 +48,9 @@ const Projetos = () => {
                     custos={projeto.custos}
                     categorias={projeto.categorias.name}
                     key={projeto.id}
+                    removerProjetos={removerProjetos}
                     ></CardDoProjeto>
                 ))}
-                {!removerLoading && <Loading/>}
-                {removerLoading && projetos.length === 0 && <P>Não tem nenhum projeto</P>}
                 </Titulo>
             </ContainerProjetos>
             <Caixa>
